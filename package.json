@@ -16,6 +16,9 @@
     "format": "prettier --write .",
     "prepare": "husky install"
   },
+  "lint-staged": {
+    "*.{js,jsx,json,css,md}": "prettier --write"
+  },
   "keywords": [],
   "engines": {
     "node": ">=18.0.0"
@@ -26,6 +29,7 @@
   "devDependencies": {
     "concurrently": "^9.1.2",
     "husky": "^9.1.7",
+    "lint-staged": "^15.5.0",
     "prettier": "^3.5.3"
   }
 }
