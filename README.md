@@ -102,3 +102,5 @@ Secure environment variables
 Input validation
 
 Error handling
+
+Husky + Prettier for automatic code formatting on commit
