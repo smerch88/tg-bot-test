@@ -13,7 +13,8 @@
     "start:backend": "npm --workspace apps/backend start",
     "build:frontend": "npm --workspace apps/frontend run build",
     "start": "npm run build:frontend && npm run start:backend",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "keywords": [],
   "engines": {
@@ -24,6 +25,7 @@
   "description": "",
   "devDependencies": {
     "concurrently": "^9.1.2",
+    "husky": "^9.1.7",
     "prettier": "^3.5.3"
   }
 }
