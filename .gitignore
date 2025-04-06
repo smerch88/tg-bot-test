@@ -1,0 +1,30 @@
+# Node dependencies
+node_modules/
+apps/**/node_modules/
+
+# Build output
+dist/
+apps/**/dist/
+
+# Local env files
+.env
+.env.*  # optional wildcard
+apps/**/.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Vite cache
+apps/frontend/.vite/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+package-lock.json

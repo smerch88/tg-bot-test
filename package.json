@@ -1,0 +1,29 @@
+{
+  "name": "telegram-message-sender",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace apps/backend run dev",
+    "dev:frontend": "npm --workspace apps/frontend start",
+    "dev:all": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start:backend": "npm --workspace apps/backend start",
+    "build:frontend": "npm --workspace apps/frontend run build",
+    "start": "npm run build:frontend && npm run start:backend",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "prettier": "^3.5.3"
+  }
+}
