@@ -62,8 +62,8 @@ export default function SendMessageForm() {
           {...register('chatId', {
             required: 'Chat ID is required',
             pattern: {
-              value: /^\d+$/,
-              message: 'Chat ID must be a number',
+              value: /^-?\d+$/,
+              message: 'Chat ID must be a number (can start with "-")',
             },
           })}
           error={!!errors.chatId}
